@@ -1,1 +1,197 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #080b19;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 8%;
+  background: #0c1021;
+  border-bottom: 1px solid #292b48;
+}
+
+.logo {
+  color: #b69cff;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.nav-link {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 65px 20px;
+  background: radial-gradient(
+    ellipse at center,
+    #292052 0%,
+    #111329 45%,
+    #080b19 80%
+  );
+}
+
+.stars {
+  color: #c7a8ff;
+  font-size: 30px;
+  letter-spacing: 15px;
+  margin-bottom: 25px;
+  animation: glow 2s infinite alternate;
+}
+
+.eyebrow {
+  color: #b69cff;
+  letter-spacing: 4px;
+  font-size: 11px;
+}
+
+.hero h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(35px, 7vw, 65px);
+  margin: 25px 0;
+}
+
+.hero h1 span {
+  color: #b69cff;
+  text-shadow: 0 0 25px #9874e8;
+}
+
+.subtitle {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.quote-card {
+  width: 100%;
+  max-width: 650px;
+  margin-top: 45px;
+  padding: 40px 25px;
+  background: #17172c;
+  border: 1px solid #66509a;
+  border-radius: 20px;
+  box-shadow: 0 0 35px #8060d533;
+}
+
+.quote-label {
+  color: #b69cff;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.quote-card h2 {
+  font-size: 24px;
+  line-height: 1.6;
+  margin: 25px 0;
+}
+
+#author {
+  color: #aaa;
+  margin-bottom: 25px;
+  font-size: 13px;
+}
+
+button {
+  padding: 13px 22px;
+  border: 1px solid #b69cff;
+  border-radius: 30px;
+  background: #7753bb;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: inherit;
+}
+
+button:hover {
+  background: #a080ed;
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px #9874e8;
+}
+
+.scroll-text {
+  margin-top: 45px;
+  color: #777;
+  font-size: 10px;
+  letter-spacing: 4px;
+}
+
+.explore {
+  text-align: center;
+  padding: 75px 20px;
+}
+
+.explore h2 {
+  font-family: 'Orbitron', sans-serif;
+  margin: 20px 0 30px;
+}
+
+.categories {
+  max-width: 800px;
+  margin: auto;
+}
+
+.categories button {
+  background: #17172c;
+  margin: 7px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #0c1021;
+  border-top: 1px solid #292b48;
+  color: #888;
+  font-size: 12px;
+}
+
+footer p + p {
+  margin-top: 8px;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #9874e8; }
+  to { text-shadow: 0 0 25px #b69cff; }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .logo {
+    font-size: 13px;
+  }
+
+  .quote-card {
+    padding: 30px 18px;
+  }
+
+  .quote-card h2 {
+    font-size: 19px;
+  }
+}
+
