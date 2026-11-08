@@ -1,1 +1,63 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b19">
+  <meta name="description" content="A universe of daily thoughts, anime inspiration, motivation and life lessons.">
+  <title>Daily Thoughts — Beyond Imagination</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="#" class="logo">✦ DAILY THOUGHTS</a>
+    <a href="#explore" class="nav-link">Explore</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="stars">✦ ✧ ✦</div>
+      <p class="eyebrow">WELCOME TO YOUR UNIVERSE</p>
+
+      <h1>Beyond <span>Imagination.</span></h1>
+
+      <p class="subtitle">
+        Every thought has a story. Every day has a meaning.
+      </p>
+
+      <div class="quote-card">
+        <p class="quote-label" id="category">DAILY THOUGHT</p>
+        <h2 id="thought">Loading inspiration...</h2>
+        <p id="author">— Daily Thoughts</p>
+        <button id="newThought">Discover Another ✦</button>
+      </div>
+
+      <p class="scroll-text">SCROLL TO EXPLORE ↓</p>
+    </section>
+
+    <section class="explore" id="explore">
+      <p class="eyebrow">FIND YOUR INSPIRATION</p>
+      <h2>Explore Categories</h2>
+
+      <div class="categories">
+        <button data-category="All">All Thoughts</button>
+        <button data-category="Life">Life</button>
+        <button data-category="Motivation">Motivation</button>
+        <button data-category="Anime">Anime</button>
+        <button data-category="Friendship">Friendship</button>
+        <button data-category="Inspiration">Inspiration</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>✦ DAILY THOUGHTS ✦</p>
+    <p>Made for dreamers, thinkers and explorers.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
